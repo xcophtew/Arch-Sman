@@ -85,7 +85,7 @@
         // Function to get a response from my api
         async function getArchByteResponse(userMessage) {
             try {
-                const response = await fetch(`https://archrest.vercel.app/api/generate?prompt=${encodeURIComponent(userMessage)}`);
+                const response = await fetch(`https://widipe.com/gemini?prompt=${encodeURIComponent(userMessage)}`);
             				//Converting thr Json go somethinh readable... basic as you will still see asterisks
                 const data = await response.json();
                 return data.archanswer;
